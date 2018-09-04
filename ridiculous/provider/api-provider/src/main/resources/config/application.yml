@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: domain-service
+  cloud:
+    consul:
+      discovery:
+        instance-id: domain-service-1
+server:
+  port: 7070
