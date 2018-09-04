@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class HttpModel implements Serializable {
 
 
-    public static volatile  HttpModel instance = null;
+    private static volatile  HttpModel instance = null;
 
     private HttpModel (){
 
