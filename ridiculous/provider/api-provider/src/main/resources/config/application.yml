@@ -4,6 +4,8 @@ spring:
   cloud:
     consul:
       discovery:
-        instance-id: domain-service-1
+        instance-id: ${spring.application.name}:${server.port}
+        hostname: localhost
+        tags: ${spring.application.name}:${spring.cloud.consul.discovery.hostname}
 server:
   port: 7070
