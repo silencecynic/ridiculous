@@ -5,7 +5,9 @@ spring:
     consul:
       discovery:
         instance-id: ${spring.application.name}:${server.port}
-        hostname: localhost
         tags: ${spring.application.name}:${spring.cloud.consul.discovery.hostname}
+        enabled: true
+      host: localhost
+      port: 8500
 server:
   port: 7070
